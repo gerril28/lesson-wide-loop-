@@ -7,11 +7,14 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(counter)
 })
 let counter = 0
-basic.showIcon(IconNames.EigthNote)
+basic.showIcon(IconNames.Happy)
 counter = 0
 basic.showNumber(counter)
 basic.forever(function () {
-    while (false) {
-    	
+    while (counter == 9) {
+        basic.showIcon(IconNames.EigthNote)
+    }
+    while (counter == 7) {
+        basic.showIcon(IconNames.EigthNote)
     }
 })
